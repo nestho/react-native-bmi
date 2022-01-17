@@ -17,7 +17,7 @@ export default class App extends React.Component {
   };
 
   handleCalculate = () => {
-    let imc = (this.state.mass * 703) / this.state.height ** 2;
+    let imc = this.state.mass / this.state.height ** 2;
     this.setState({
       resultNumber: imc.toFixed(2)
     });
